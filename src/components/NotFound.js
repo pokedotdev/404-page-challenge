@@ -59,8 +59,10 @@ const Info = styled.div`
 `
 
 const Image = styled.img`
+  display: block;
   width: 100%;
   max-width: 540px;
+  margin: 0 auto;
 `
 
 const NotFound = () => {
