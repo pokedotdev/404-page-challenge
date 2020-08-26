@@ -5,6 +5,10 @@ const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 768px) {
+      margin: 0 0 18px;
+  }
+
   a {
     font-family: Montserrat;
     font-style: normal;

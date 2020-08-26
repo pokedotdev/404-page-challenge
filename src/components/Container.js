@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   min-height: calc(100vh);
   align-content: space-between;
   /* background: #f1f1f1 */
+
+  @media (max-width: 768px) {
+    padding: 20px 24px;
+  }
 `
 
 const Container = ({children}) => {

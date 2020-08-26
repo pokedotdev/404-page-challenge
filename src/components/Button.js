@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled'
 
 const Wrapper = styled.button`
-  font-family: 'Space Mono'
+  font-family: 'Space Mono';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

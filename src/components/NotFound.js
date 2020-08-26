@@ -6,8 +6,14 @@ import ImageScarecrow from '../assets/img/Scarecrow.png'
 
 const Main = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-gap: 120px;
+  margin: 64px 0;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+  }
 `;
 
 const Info = styled.div`
@@ -20,6 +26,15 @@ const Info = styled.div`
     letter-spacing: -0.035em;
     color: #333333; 
     margin: 0 0 36px 0;
+
+    @media (max-width: 768px) {
+      font-size: 48px;
+      line-height: 71px;
+      margin: 0 0 29px 0;
+    }
+    @media (max-width: 400px) {
+      letter-spacing: -0.050em;
+    }
   }
 
   p {
@@ -33,10 +48,18 @@ const Info = styled.div`
     letter-spacing: -0.035em;
     color: #4F4F4F;
     margin: 0 0 64px 0;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 20px 0 0;
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 `
 
 const Image = styled.img`
+  width: 100%;
   max-width: 540px;
 `
 
